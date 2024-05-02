@@ -1,18 +1,18 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin-top: 62px;
+    margin-top: 3.875rem;
     .logo {
-        width: 120px;
-        height: 80px;
+        width: 7.5rem;
+        height: 5rem;
     }
 
     /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 80px;
-    height: 28px;
+    width: 5rem;
+    height: 1.75rem;
   }
   
   /* Hide default HTML checkbox */
@@ -38,10 +38,10 @@ header {
   .slider:before {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 4px;
+    height: 1.25rem;
+    width: 1.25rem;
+    left: .25rem;
+    bottom: .25rem;
     background-color: #CBD8E8;
     -webkit-transition: .4s;
     transition: .4s;
@@ -52,7 +52,7 @@ header {
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #BF8CE1;
+    box-shadow: 0 0 0.063rem #BF8CE1;
   }
   
   input:checked + .slider:before {
@@ -63,7 +63,7 @@ header {
 
   /* Rounded sliders */
   .slider.round {
-    border-radius: 34px;
+    border-radius: 2.125rem;
   }
   
   .slider.round:before {

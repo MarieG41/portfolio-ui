@@ -17,7 +17,7 @@
     4. Improve text rendering
   */
   body {
-    line-height: 1.5;
+    line-height: 1.4;
     -webkit-font-smoothing: antialiased;
   }
   /*
@@ -51,7 +51,7 @@
     background: linear-gradient(180deg, #E893C5, #CBD8E8, #EBB2C3);
     background-repeat: no-repeat;
     color: #1E0F75;
-    margin-inline: 100px;
+    margin-inline: 6.25rem;
     a {
         font-family: inherit;
         color: inherit;
@@ -61,4 +61,5 @@
     }
   }
 
-  @import 'header'
+  @import 'header';
+  @import 'hero';
