@@ -19,7 +19,7 @@
   4. Improve text rendering
 */
 body {
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -57,7 +57,7 @@ body {
   background: linear-gradient(180deg, #E893C5, #CBD8E8, #EBB2C3);
   background-repeat: no-repeat;
   color: #1E0F75;
-  margin-inline: 100px;
+  margin-inline: 6.25rem;
 }
 body a {
   font-family: inherit;
@@ -70,21 +70,21 @@ body h1, body h2 {
 header {
   display: flex;
   justify-content: space-between;
-  margin-top: 62px;
+  margin-top: 3.875rem;
   /* The switch - the box around the slider */
   /* Hide default HTML checkbox */
   /* The slider */
   /* Rounded sliders */
 }
 header .logo {
-  width: 120px;
-  height: 80px;
+  width: 7.5rem;
+  height: 5rem;
 }
 header .switch {
   position: relative;
   display: inline-block;
-  width: 80px;
-  height: 28px;
+  width: 5rem;
+  height: 1.75rem;
 }
 header .switch input {
   opacity: 0;
@@ -105,10 +105,10 @@ header .slider {
 header .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 4px;
+  height: 1.25rem;
+  width: 1.25rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
   background-color: #CBD8E8;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -117,7 +117,7 @@ header input:checked + .slider {
   background-color: #1E0F75;
 }
 header input:focus + .slider {
-  box-shadow: 0 0 1px #BF8CE1;
+  box-shadow: 0 0 0.063rem #BF8CE1;
 }
 header input:checked + .slider:before {
   -webkit-transform: translateX(50px);
@@ -125,10 +125,45 @@ header input:checked + .slider:before {
   transform: translateX(50px);
 }
 header .slider.round {
-  border-radius: 34px;
+  border-radius: 2.125rem;
 }
 header .slider.round:before {
   border-radius: 50%;
+}
+
+.hero {
+  padding-block-start: 10rem;
+  display: grid;
+  grid-template-columns: minmax(0, 30rem) minmax(0, 50rem);
+  justify-content: center;
+  padding-block-end: 10rem;
+}
+.hero h1 {
+  font-size: 7rem;
+  margin-block-end: 1.25rem;
+}
+.hero img {
+  width: 100%;
+  border-radius: 45%;
+}
+.hero a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  border-radius: 50px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
+  backdrop-filter: blur(14.9px);
+  -webkit-backdrop-filter: blur(14.9px);
+}
+.hero a:hover {
+  background: rgba(255, 255, 255, 0.098);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.9px);
+  -webkit-backdrop-filter: blur(14.9px);
 }
 
 /*# sourceMappingURL=style.css.map */
