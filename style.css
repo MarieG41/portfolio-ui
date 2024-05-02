@@ -1,0 +1,134 @@
+/*reset*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(180deg, #E893C5, #CBD8E8, #EBB2C3);
+  background-repeat: no-repeat;
+  color: #1E0F75;
+  margin-inline: 100px;
+}
+body a {
+  font-family: inherit;
+  color: inherit;
+}
+body h1, body h2 {
+  font-family: "Abril Fatface", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 62px;
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */
+}
+header .logo {
+  width: 120px;
+  height: 80px;
+}
+header .switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 28px;
+}
+header .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #BF8CE1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #CBD8E8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header input:checked + .slider {
+  background-color: #1E0F75;
+}
+header input:focus + .slider {
+  box-shadow: 0 0 1px #BF8CE1;
+}
+header input:checked + .slider:before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+}
+header .slider.round {
+  border-radius: 34px;
+}
+header .slider.round:before {
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
