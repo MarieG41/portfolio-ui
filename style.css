@@ -143,7 +143,7 @@ header .slider.round:before {
   margin-block-end: 1.25rem;
 }
 .hero img {
-  width: 100%;
+  width: 90%;
   border-radius: 45%;
 }
 .hero a {
@@ -166,6 +166,34 @@ header .slider.round:before {
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
   transition: all ease-in-out 300ms;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 40em) minmax(0, 30em);
+  justify-content: center;
+  padding-block-end: 10rem;
+}
+.about h1 {
+  font-size: 5.5rem;
+}
+.about .about-infos {
+  padding-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.about .about-infos div {
+  margin-block-start: 2rem;
+}
+.about h3 {
+  font-weight: 800;
+  display: flex;
+}
+.about span {
+  padding-inline-end: 0.5rem;
+}
+.about .under {
+  padding-inline-start: 2.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
