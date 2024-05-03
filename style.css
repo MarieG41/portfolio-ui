@@ -169,6 +169,38 @@ header .slider.round:before {
   transition: all ease-in-out 300ms;
 }
 
+@media (max-width: 35em) {
+  .hero {
+    display: block;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .hero a {
+    margin-block-start: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 60em) {
+  .hero {
+    display: block;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .hero a {
+    margin-block-start: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  .hero img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 .about {
   display: grid;
   grid-template-columns: minmax(0, 40em) minmax(0, 25em);
@@ -198,6 +230,22 @@ header .slider.round:before {
   padding-inline-start: 2.3rem;
 }
 
+@media (max-width: 35em) {
+  .about {
+    display: block;
+  }
+  .about h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 60em) {
+  .about {
+    display: block;
+  }
+  .about h1 {
+    font-size: 3.5rem;
+  }
+}
 .grid-column {
   display: grid;
   grid-template-columns: minmax(0, 30em) minmax(0, 30em);
@@ -251,6 +299,23 @@ header .slider.round:before {
 }
 .grid-column .code-tech, .grid-column .creativ-tech {
   display: flex;
+}
+
+@media (max-width: 35em) {
+  .grid-column {
+    display: block;
+  }
+  .grid-column h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 55em) {
+  .grid-column {
+    display: block;
+  }
+  .grid-column h2 {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
