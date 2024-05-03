@@ -158,12 +158,14 @@ header .slider.round:before {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
+  transition: all ease-in-out 300ms;
 }
 .hero a:hover {
   background: rgba(255, 255, 255, 0.098);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
+  transition: all ease-in-out 300ms;
 }
 
 /*# sourceMappingURL=style.css.map */
