@@ -1,9 +1,8 @@
 .about {
     display: grid;
-    grid-template-columns: minmax(0, 40em) minmax(0, 25em);
+    grid-template-columns: minmax(0, 40em) minmax(0, 30em);
     justify-content: center;
     padding-block-end: 10rem;
-    gap: 5em;
     h1 {
         font-size: 5.5rem;
     }
@@ -24,5 +23,25 @@
     }
     .under {
         padding-inline-start: 2.3rem;
+    }
+}
+
+@media (max-width: 35em) {
+    .about {
+        display: block;
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media (max-width: 60em) {
+    .about {
+        display: block;
+        padding-block: 5rem;
+        h1 {
+            font-size: 3.5rem;
+        }
     }
 }

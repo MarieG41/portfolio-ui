@@ -59,6 +59,12 @@
     h1, h2 {
         font-family: 'Abril Fatface', serif;
     }
+    footer {
+      margin-block-start: 4rem;
+      padding-block: 5rem;
+      border-top: 2px solid #1e0f75;
+      text-align: center
+    }
   }
 
   @import 'header';
