@@ -3,6 +3,13 @@
     grid-template-columns: minmax(0, 30em) minmax(0, 30em);
     justify-content: center;
     gap: 10rem;
+    svg {
+        width: 3rem;
+    }
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+    }
     h2 {
         font-size: 3.5rem;
     }
@@ -50,6 +57,8 @@
     }
     .code-tech, .creativ-tech {
         display: flex;
+        justify-content: space-between;
+        margin-block-end: 2rem;
     }
 }
 
