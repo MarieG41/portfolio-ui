@@ -1,0 +1,54 @@
+.grid-column {
+    display: grid;
+    grid-template-columns: minmax(0, 30em) minmax(0, 30em);
+    justify-content: center;
+    gap: 10rem;
+    h2 {
+        font-size: 3.5rem;
+    }
+    .education, .contact {
+        margin-block-end: 2rem;
+        h3 {
+            margin-block: 1rem;
+        }
+        ul {
+            margin-block-end: 1.8rem;
+        }
+    }
+    .tech, .soft-skills, .experiences {
+        margin-block: 2rem;
+        h3 {
+            margin-block: 1rem;
+        }
+        ul {
+            margin-block-end: 1.8rem;
+        }
+        .soft-skills-infos {
+            display: grid;
+            grid-template-columns: 10rem 10rem;
+            .soft-skills-word {
+                margin-block-end: 1rem;
+                margin-inline-end: 1rem;
+                text-align: center;
+                font-weight: 800;
+                font-size:1rem;
+                padding-block: .5rem;
+                padding-inline: 1.5rem;
+                border-radius: 50px;
+                border: 1px solid #ffffff65;
+            }
+            .orange {
+                background-color: #EBB2C3;
+            }
+            .pink {
+                background-color: #E893C5;
+            }
+            .purple {
+                background-color: #BF8CE1;
+            }
+        }
+    }
+    .code-tech, .creativ-tech {
+        display: flex;
+    }
+}

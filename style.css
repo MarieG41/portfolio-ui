@@ -153,6 +153,7 @@ header .slider.round:before {
   padding-block: 1rem;
   padding-inline: 1.5rem;
   border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1137254902);
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
@@ -170,9 +171,10 @@ header .slider.round:before {
 
 .about {
   display: grid;
-  grid-template-columns: minmax(0, 40em) minmax(0, 30em);
+  grid-template-columns: minmax(0, 40em) minmax(0, 25em);
   justify-content: center;
   padding-block-end: 10rem;
+  gap: 5em;
 }
 .about h1 {
   font-size: 5.5rem;
@@ -194,6 +196,61 @@ header .slider.round:before {
 }
 .about .under {
   padding-inline-start: 2.3rem;
+}
+
+.grid-column {
+  display: grid;
+  grid-template-columns: minmax(0, 30em) minmax(0, 30em);
+  justify-content: center;
+  gap: 10rem;
+}
+.grid-column h2 {
+  font-size: 3.5rem;
+}
+.grid-column .education, .grid-column .contact {
+  margin-block-end: 2rem;
+}
+.grid-column .education h3, .grid-column .contact h3 {
+  margin-block: 1rem;
+}
+.grid-column .education ul, .grid-column .contact ul {
+  margin-block-end: 1.8rem;
+}
+.grid-column .tech, .grid-column .soft-skills, .grid-column .experiences {
+  margin-block: 2rem;
+}
+.grid-column .tech h3, .grid-column .soft-skills h3, .grid-column .experiences h3 {
+  margin-block: 1rem;
+}
+.grid-column .tech ul, .grid-column .soft-skills ul, .grid-column .experiences ul {
+  margin-block-end: 1.8rem;
+}
+.grid-column .tech .soft-skills-infos, .grid-column .soft-skills .soft-skills-infos, .grid-column .experiences .soft-skills-infos {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+}
+.grid-column .tech .soft-skills-infos .soft-skills-word, .grid-column .soft-skills .soft-skills-infos .soft-skills-word, .grid-column .experiences .soft-skills-infos .soft-skills-word {
+  margin-block-end: 1rem;
+  margin-inline-end: 1rem;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1rem;
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3960784314);
+}
+.grid-column .tech .soft-skills-infos .orange, .grid-column .soft-skills .soft-skills-infos .orange, .grid-column .experiences .soft-skills-infos .orange {
+  background-color: #EBB2C3;
+}
+.grid-column .tech .soft-skills-infos .pink, .grid-column .soft-skills .soft-skills-infos .pink, .grid-column .experiences .soft-skills-infos .pink {
+  background-color: #E893C5;
+}
+.grid-column .tech .soft-skills-infos .purple, .grid-column .soft-skills .soft-skills-infos .purple, .grid-column .experiences .soft-skills-infos .purple {
+  background-color: #BF8CE1;
+}
+.grid-column .code-tech, .grid-column .creativ-tech {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
