@@ -1,8 +1,9 @@
 .about {
     display: grid;
-    grid-template-columns: minmax(0, 40em) minmax(0, 30em);
+    grid-template-columns: minmax(0, 40em) minmax(0, 25em);
     justify-content: center;
     padding-block-end: 10rem;
+    gap: 5em;
     h1 {
         font-size: 5.5rem;
     }
