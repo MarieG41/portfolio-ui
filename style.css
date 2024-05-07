@@ -73,6 +73,12 @@ body footer {
   text-align: center;
 }
 
+.dark {
+  background: linear-gradient(180deg, #BF8CE1, #1e0f75);
+  background-repeat: no-repeat;
+  color: #CBD8E8;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -120,7 +126,7 @@ header .slider:before {
   transition: 0.4s;
 }
 header input:checked + .slider {
-  background-color: #1E0F75;
+  background-color: #1e0f75;
 }
 header input:focus + .slider {
   box-shadow: 0 0 0.063rem #BF8CE1;

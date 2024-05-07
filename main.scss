@@ -67,6 +67,12 @@
     }
   }
 
+  .dark {
+    background: linear-gradient(180deg, #BF8CE1, #1e0f75);
+    background-repeat: no-repeat;
+    color: #CBD8E8;
+  }
+
   @import 'header';
   @import 'hero';
   @import 'about';
