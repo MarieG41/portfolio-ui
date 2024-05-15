@@ -71,9 +71,22 @@
     background: linear-gradient(180deg, #BF8CE1, #1e0f75);
     background-repeat: no-repeat;
     color: #CBD8E8;
+    footer {
+      border-top: 2px solid #CBD8E8;
+    }
+    svg path {
+      fill: #CBD8E8;
+    }
+    .creativ-tech {
+      color: #CBD8E8;
+    }
+    .soft-skills-infos {
+      color: #1E0F75
+    }
   }
 
   @import 'header';
   @import 'hero';
   @import 'about';
-  @import 'resume'
+  @import 'resume';
+  @import 'projects.scss';

@@ -1,0 +1,18 @@
+.projects {
+    margin-block-start: 8rem;
+    .code-projects {
+        margin-block: 4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 2rem;
+        .resize {
+            width: 100%;
+        }
+    
+        .projects-title {
+            margin-block: 2rem 1rem;
+        } 
+    }
+}

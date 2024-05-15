@@ -78,6 +78,18 @@ body footer {
   background-repeat: no-repeat;
   color: #CBD8E8;
 }
+.dark footer {
+  border-top: 2px solid #CBD8E8;
+}
+.dark svg path {
+  fill: #CBD8E8;
+}
+.dark .creativ-tech {
+  color: #CBD8E8;
+}
+.dark .soft-skills-infos {
+  color: #1E0F75;
+}
 
 header {
   display: flex;
@@ -340,6 +352,23 @@ header .slider.round:before {
   .grid-column h2 {
     font-size: 2.5rem;
   }
+}
+.projects {
+  margin-block-start: 8rem;
+}
+.projects .code-projects {
+  margin-block: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 2rem;
+}
+.projects .code-projects .resize {
+  width: 100%;
+}
+.projects .code-projects .projects-title {
+  margin-block: 2rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
