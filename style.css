@@ -364,8 +364,9 @@ header .slider.round:before {
   text-align: center;
   gap: 2rem;
 }
-.projects .code-projects .resize {
-  width: 100%;
+.projects .code-projects .number-projects {
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
 }
 .projects .code-projects .projects-title {
   margin-block: 2rem 1rem;
