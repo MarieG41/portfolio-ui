@@ -73,6 +73,24 @@ body footer {
   text-align: center;
 }
 
+.dark {
+  background: linear-gradient(180deg, #BF8CE1, #1e0f75);
+  background-repeat: no-repeat;
+  color: #CBD8E8;
+}
+.dark footer {
+  border-top: 2px solid #CBD8E8;
+}
+.dark svg path {
+  fill: #CBD8E8;
+}
+.dark .creativ-tech {
+  color: #CBD8E8;
+}
+.dark .soft-skills-infos {
+  color: #1E0F75;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -120,7 +138,7 @@ header .slider:before {
   transition: 0.4s;
 }
 header input:checked + .slider {
-  background-color: #1E0F75;
+  background-color: #1e0f75;
 }
 header input:focus + .slider {
   box-shadow: 0 0 0.063rem #BF8CE1;
@@ -334,6 +352,23 @@ header .slider.round:before {
   .grid-column h2 {
     font-size: 2.5rem;
   }
+}
+.projects {
+  margin-block-start: 8rem;
+}
+.projects .code-projects {
+  margin-block: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 2rem;
+}
+.projects .code-projects .resize {
+  width: 100%;
+}
+.projects .code-projects .projects-title {
+  margin-block: 2rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
