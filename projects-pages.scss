@@ -1,0 +1,71 @@
+.project-details {
+    margin-block: 2rem;
+
+    .dog-profile {
+        display: grid;
+        grid-template-columns: 13rem 4.2rem 36rem 17.5rem;
+        gap: 1.5rem;
+        margin-block: 2rem;
+    }
+
+    .project-text {
+        display: grid;
+        grid-template-columns: repeat(2, 21.5rem);
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .return-link {
+        margin-block-start: 2rem;
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            padding-block: 1rem;
+            padding-inline: 1.5rem;
+            border-radius: 20px;
+            border: 2px solid #ffffff1d;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
+            backdrop-filter: blur(14.9px);
+            -webkit-backdrop-filter: blur(14.9px);
+            transition: all ease-in-out 300ms;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.265);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(14.9px);
+                -webkit-backdrop-filter: blur(14.9px);
+                transition: all ease-in-out 300ms;
+            }
+        }
+    }
+}
+
+.number-projects {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5rem;
+}
+
+@media (max-width:35em) {
+    .project-details {
+        text-align: center;
+        .dog-profile, .project-text {
+            display: block;
+            text-align: center;
+            img {
+                margin-block: 1.5rem;
+            }
+            p {
+                margin-block: 1.5rem;
+            }
+        }
+        .palette {
+            display: none;
+        }
+    }
+}
