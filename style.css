@@ -73,6 +73,11 @@ body footer {
   text-align: center;
 }
 
+@media (max-width: 35em) {
+  body {
+    margin-inline: 2rem;
+  }
+}
 .dark {
   background: linear-gradient(180deg, #BF8CE1, #1e0f75);
   background-repeat: no-repeat;
@@ -80,6 +85,9 @@ body footer {
 }
 .dark footer {
   border-top: 2px solid #CBD8E8;
+}
+.dark footer a {
+  color: #CBD8E8;
 }
 .dark svg path {
   fill: #CBD8E8;
@@ -90,7 +98,15 @@ body footer {
 .dark .soft-skills-infos {
   color: #1E0F75;
 }
+.dark a {
+  color: #1E0F75;
+}
 
+@media (max-width: 35em) {
+  .dark a {
+    color: #CBD8E8;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -164,8 +180,8 @@ header .slider.round:before {
 }
 .hero h1 {
   font-size: 6rem;
-  margin-block-end: 1.25rem;
   margin-block-end: 4rem;
+  min-width: 6rem;
 }
 .hero img {
   width: 80%;
@@ -178,16 +194,16 @@ header .slider.round:before {
   padding-block: 1rem;
   padding-inline: 3.5rem;
   border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.1137254902);
+  border: 1px solid #ffffff;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
   transition: all ease-in-out 300ms;
 }
 .hero a:hover {
-  background: rgba(255, 255, 255, 0.265);
+  background: rgba(255, 255, 255, 0.669);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
@@ -345,7 +361,7 @@ header .slider.round:before {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 55em) {
+@media (max-width: 45em) {
   .grid-column {
     display: block;
   }
@@ -425,16 +441,16 @@ header .slider.round:before {
   padding-block: 1rem;
   padding-inline: 1.5rem;
   border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.1137254902);
+  border: 1px solid #fff;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
   transition: all ease-in-out 300ms;
 }
 .project-details .return-link a:hover {
-  background: rgba(255, 255, 255, 0.265);
+  background: rgba(255, 255, 255, 0.669);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);

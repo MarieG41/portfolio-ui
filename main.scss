@@ -66,6 +66,11 @@
       text-align: center
     }
   }
+  @media (max-width: 35em) {
+    body {
+      margin-inline: 2rem;
+    }
+  }
 
   .dark {
     background: linear-gradient(180deg, #BF8CE1, #1e0f75);
@@ -73,6 +78,9 @@
     color: #CBD8E8;
     footer {
       border-top: 2px solid #CBD8E8;
+      a {
+        color: #CBD8E8;
+      }
     }
     svg path {
       fill: #CBD8E8;
@@ -83,6 +91,18 @@
     .soft-skills-infos {
       color: #1E0F75
     }
+    a {
+      color: #1E0F75
+    }
+  }
+
+  @media (max-width: 35em) {
+    .dark {
+      a {
+        color: #CBD8E8
+      }
+    }
+    
   }
 
   @import 'header';
