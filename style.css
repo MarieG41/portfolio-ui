@@ -54,9 +54,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, #E893C5, #CBD8E8, #EBB2C3);
+  background-color: #152039;
   background-repeat: no-repeat;
-  color: #1E0F75;
+  color: #fff;
   margin-inline: 6.25rem;
 }
 body a {
@@ -64,12 +64,13 @@ body a {
   color: inherit;
 }
 body h1, body h2 {
-  font-family: "Abril Fatface", serif;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 body footer {
   margin-block-start: 4rem;
   padding-block: 5rem;
-  border-top: 2px solid #1e0f75;
+  border-top: 2px solid #fff;
   text-align: center;
 }
 
@@ -79,32 +80,32 @@ body footer {
   }
 }
 .dark {
-  background: linear-gradient(180deg, #BF8CE1, #1e0f75);
+  background-color: #fff;
   background-repeat: no-repeat;
-  color: #CBD8E8;
+  color: #152039;
 }
 .dark footer {
   border-top: 2px solid #CBD8E8;
 }
 .dark footer a {
-  color: #CBD8E8;
+  color: #152039;
 }
 .dark svg path {
-  fill: #CBD8E8;
+  fill: #152039;
 }
 .dark .creativ-tech {
   color: #CBD8E8;
 }
 .dark .soft-skills-infos {
-  color: #1E0F75;
+  color: #152039;
 }
 .dark a {
-  color: #1E0F75;
+  color: #152039;
 }
 
 @media (max-width: 35em) {
   .dark a {
-    color: #CBD8E8;
+    color: #152039;
   }
 }
 header {
@@ -138,7 +139,7 @@ header .slider {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #BF8CE1;
+  background-color: #C1FF72;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -149,12 +150,12 @@ header .slider:before {
   width: 1.25rem;
   left: 0.25rem;
   bottom: 0.25rem;
-  background-color: #CBD8E8;
+  background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 header input:checked + .slider {
-  background-color: #1e0f75;
+  background-color: #152039;
 }
 header input:focus + .slider {
   box-shadow: 0 0 0.063rem #BF8CE1;
@@ -179,7 +180,7 @@ header .slider.round:before {
   padding-block-end: 10rem;
 }
 .hero h1 {
-  font-size: 6rem;
+  font-size: 4.5rem;
   margin-block-end: 4rem;
   min-width: 6rem;
 }
@@ -194,16 +195,15 @@ header .slider.round:before {
   padding-block: 1rem;
   padding-inline: 3.5rem;
   border-radius: 50px;
-  border: 1px solid #ffffff;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid #C1FF72;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
   transition: all ease-in-out 300ms;
 }
 .hero a:hover {
-  background: rgba(255, 255, 255, 0.669);
+  background: #C1FF72;
+  color: #152039;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
@@ -250,10 +250,9 @@ header .slider.round:before {
   padding-block-end: 10rem;
 }
 .about h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 .about .about-infos {
-  padding-block-start: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -339,13 +338,15 @@ header .slider.round:before {
   border: 1px solid rgba(255, 255, 255, 0.3960784314);
 }
 .grid-column .tech .soft-skills-infos .orange, .grid-column .soft-skills .soft-skills-infos .orange, .grid-column .experiences .soft-skills-infos .orange {
-  background-color: #EBB2C3;
+  background-color: #C1FF72;
+  color: #152039;
 }
 .grid-column .tech .soft-skills-infos .pink, .grid-column .soft-skills .soft-skills-infos .pink, .grid-column .experiences .soft-skills-infos .pink {
-  background-color: #E893C5;
+  border: 1px solid #C1FF72;
 }
 .grid-column .tech .soft-skills-infos .purple, .grid-column .soft-skills .soft-skills-infos .purple, .grid-column .experiences .soft-skills-infos .purple {
-  background-color: #BF8CE1;
+  border: 1px solid #fff;
+  color: #C1FF72;
 }
 .grid-column .code-tech, .grid-column .creativ-tech {
   display: flex;
@@ -373,8 +374,9 @@ header .slider.round:before {
   margin-block-start: 8rem;
 }
 .projects .number-projects {
-  font-family: "Abril Fatface", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  color: #C1FF72;
 }
 .projects .projects-ui {
   margin-block: 4rem;
@@ -441,16 +443,15 @@ header .slider.round:before {
   padding-block: 1rem;
   padding-inline: 1.5rem;
   border-radius: 20px;
-  border: 1px solid #fff;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid #C1FF72;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
   transition: all ease-in-out 300ms;
 }
 .project-details .return-link a:hover {
-  background: rgba(255, 255, 255, 0.669);
+  background: #C1FF72;
+  color: #152039;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);

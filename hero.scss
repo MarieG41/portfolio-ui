@@ -5,7 +5,7 @@
     justify-content: center;
     padding-block-end: 10rem;
     h1 {
-        font-size: 6rem;
+        font-size: 4.5rem;
         margin-block-end: 4rem;
         min-width: 6rem;
     }
@@ -20,15 +20,14 @@
         padding-block: 1rem;
         padding-inline: 3.5rem;
         border-radius: 50px;
-        border: 1px solid #ffffff;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.13);
+        border: 1px solid #C1FF72;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
         backdrop-filter: blur(14.9px);
         -webkit-backdrop-filter: blur(14.9px);
         transition: all ease-in-out 300ms;
         &:hover {
-            background: rgba(255, 255, 255, 0.669);
+            background: #C1FF72;
+            color: #152039;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(14.9px);
             -webkit-backdrop-filter: blur(14.9px); 

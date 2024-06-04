@@ -48,21 +48,22 @@
 
   body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(180deg, #E893C5, #CBD8E8, #EBB2C3);
+    background-color: #152039;
     background-repeat: no-repeat;
-    color: #1E0F75;
+    color: #fff;
     margin-inline: 6.25rem;
     a {
         font-family: inherit;
         color: inherit;
     }
     h1, h2 {
-        font-family: 'Abril Fatface', serif;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
     }
     footer {
       margin-block-start: 4rem;
       padding-block: 5rem;
-      border-top: 2px solid #1e0f75;
+      border-top: 2px solid #fff;
       text-align: center
     }
   }
@@ -73,33 +74,33 @@
   }
 
   .dark {
-    background: linear-gradient(180deg, #BF8CE1, #1e0f75);
+    background-color: #fff;
     background-repeat: no-repeat;
-    color: #CBD8E8;
+    color: #152039;
     footer {
       border-top: 2px solid #CBD8E8;
       a {
-        color: #CBD8E8;
+        color: #152039;
       }
     }
     svg path {
-      fill: #CBD8E8;
+      fill: #152039;
     }
     .creativ-tech {
       color: #CBD8E8;
     }
     .soft-skills-infos {
-      color: #1E0F75
+      color: #152039;
     }
     a {
-      color: #1E0F75
+      color: #152039;
     }
   }
 
   @media (max-width: 35em) {
     .dark {
       a {
-        color: #CBD8E8
+        color: #152039;
       }
     }
     
