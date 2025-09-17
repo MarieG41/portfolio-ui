@@ -1,36 +1,46 @@
 .hero {
-    padding-block-start: 10rem;
+    padding-block-start: 3rem;
     display: grid;
     grid-template-columns: minmax(0, 30rem) minmax(0, 40rem);
     justify-content: center;
-    padding-block-end: 10rem;
+    padding-block-end: 4rem;
+    .hero-infos {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        text-align: center;
+    }
     h1 {
         font-size: 4.5rem;
-        margin-block-end: 4rem;
         min-width: 6rem;
     }
-    img {
-        width: 80%;
-        border-radius: 45%;
+    .about-me-btn {
+        padding-block-start: 2rem;
+        padding-block-end: 1.3rem;
+        .full-btn {
+            background-color: #ff5500;
+            color: #fffdf9;
+            border: none;
+        }
+        .full-btn:hover {
+            box-shadow: 0 4px 30px #ff550046;
+            backdrop-filter: blur(14.9px);
+            -webkit-backdrop-filter: blur(14.9px); 
+            transition: all ease-in-out 300ms;
+        }
     }
     a {
         text-decoration: none;
-        font-weight: 800;
-        font-size:1.2rem;
+        font-size:1rem;
         padding-block: 1rem;
         padding-inline: 3.5rem;
         border-radius: 50px;
-        border: 1px solid #C1FF72;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.153);
-        backdrop-filter: blur(14.9px);
-        -webkit-backdrop-filter: blur(14.9px);
+        border: 2px solid #0000d3;
         transition: all ease-in-out 300ms;
+        text-align: center;
         &:hover {
-            background: #C1FF72;
-            color: #152039;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(14.9px);
-            -webkit-backdrop-filter: blur(14.9px); 
+            background-color: #0000d3;
+            color: #fffdf9;
             transition: all ease-in-out 300ms;
         }
     }
@@ -54,19 +64,22 @@
 @media (max-width: 60em) {
     .hero {
         display: block;
-        padding-block: 5rem;
+        padding-block: 2.5rem;
         h1 {
             font-size: 3rem;
             text-align: center;
         }
         a {
-            margin-block-start: 3rem;
+            margin-block-start: 2rem;
             display: flex;
             justify-content: center;
         }
         img {
             width: 60%;
             margin: 0 auto;
+        }
+        .about-me-btn {
+            padding-inline: 2rem;
         }
     }
 }

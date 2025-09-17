@@ -1,6 +1,6 @@
-let switcher = document.querySelector('input');
-let body = document.body;
+function formationToggle() {
+    console.log("toggle");
+    
+}
 
-switcher.addEventListener('click', function() {
-    body.classList.toggle('dark');
-})
+
