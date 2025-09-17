@@ -60,3 +60,34 @@
         } 
     } 
 }
+
+@media (max-width: 60em) {
+    .projects {
+        margin-block:3rem;
+        margin-inline: none;
+        h1{
+            margin-inline-start: 0;
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+       .projects-ui {
+        display: grid;
+        grid-template-columns: none;
+        .projects-title {
+            margin-block: 1rem;
+        }
+    }
+    .projects-ui {
+        margin-block: 4rem;
+        img {
+            width: 35rem;
+        }
+        .large {
+            width: 100%;
+            height: 85%;
+            }
+        } 
+    } 
+}
