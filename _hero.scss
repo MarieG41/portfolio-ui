@@ -3,12 +3,12 @@
     display: grid;
     grid-template-columns: minmax(0, 30rem) minmax(0, 40rem);
     justify-content: center;
-    padding-block-end: 4rem;
+    padding-block-end: 6.5rem;
     .hero-infos {
         display: flex;
         flex-direction: column;
         gap: .75rem;
-        text-align: center;
+        text-align: left;
     }
     h1 {
         font-size: 4.5rem;
@@ -17,31 +17,33 @@
     .about-me-btn {
         padding-block-start: 2rem;
         padding-block-end: 1.3rem;
+        font-weight: 700;
         .full-btn {
             background-color: #ff5500;
             color: #fffdf9;
             border: none;
+            transition: all ease-in-out 500ms;
         }
         .full-btn:hover {
-            box-shadow: 0 4px 30px #ff550046;
-            backdrop-filter: blur(14.9px);
-            -webkit-backdrop-filter: blur(14.9px); 
-            transition: all ease-in-out 300ms;
+           background-color: #fffdf9; 
+           color: #ff5500;
+           border: 3px solid #ff5500;
+           transition: all ease-in-out 500ms;
         }
     }
     a {
         text-decoration: none;
         font-size:1rem;
         padding-block: 1rem;
-        padding-inline: 3.5rem;
+        padding-inline: 2rem;
         border-radius: 50px;
-        border: 2px solid #0000d3;
-        transition: all ease-in-out 300ms;
+        border: 3px solid #0000d3;
+        transition: all ease-in-out 500ms;
         text-align: center;
         &:hover {
             background-color: #0000d3;
             color: #fffdf9;
-            transition: all ease-in-out 300ms;
+            transition: all ease-in-out 500ms;;
         }
     }
 }
@@ -49,6 +51,9 @@
 @media (max-width: 35em) {
     .hero {
         display: block;
+        .hero-infos {
+        text-align: center;
+    }
         h1 {
             font-size: 3rem;
             text-align: center;

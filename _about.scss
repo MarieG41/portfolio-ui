@@ -6,13 +6,14 @@
     h1 {
         font-size: 3rem;
         margin-block-start: 4rem;
+        font-weight: 700;
     }
     .about-infos {
         display: flex;
         flex-direction: column;
     }
     h3 {
-        font-weight: 800;
+        font-weight: 700;
         display: flex;
     }
     span {
@@ -30,6 +31,7 @@
             text-align: center;
             font-size: 3.5rem;
             margin-block-start: 4rem;
+            font-weight: 700;
         }
     }
 }
@@ -46,10 +48,12 @@
         }
         h1 {
             font-size: 3.5rem;
+            font-weight: 700;
         }
         h3 {
             display: block;
             text-align: center;
+            font-weight: 700;
         }
     }
 }

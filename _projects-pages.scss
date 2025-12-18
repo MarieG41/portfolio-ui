@@ -3,7 +3,7 @@
 
     .dog-profile {
         display: grid;
-        grid-template-columns: 13rem 4.2rem 36rem 17.5rem;
+        grid-template-columns: 25rem 25rem 25rem;
         gap: 1.5rem;
         margin-block: 2rem;
         justify-content: center;
@@ -11,7 +11,7 @@
 
     .project-text {
         display: grid;
-        grid-template-columns: repeat(2, 21.5rem);
+        grid-template-columns: repeat(2, 25rem);
         gap: 1rem;
         justify-content: center;
     }
@@ -20,27 +20,34 @@
         margin-block-start: 2rem;
         display: flex;
         justify-content: center;
-        gap: 2rem;
-
+        gap: 1rem;
+        font-weight: 700;
         a {
-            text-decoration: none;
-            font-weight: 400;
-            font-size: 1rem;
-            padding-block: 1rem;
-            padding-inline: 1.5rem;
-            border-radius: 20px;
-            color: #ff5500;
-            border: 2px solid #ff5500;
-            box-shadow: 0 4px 30px #ff55003c;
-            backdrop-filter: blur(14.9px);
-            -webkit-backdrop-filter: blur(14.9px);
-            transition: all ease-in-out 300ms;
-
-            &:hover {
-                background-color: #ff5500;
-                color: #fffdf9;
-                box-shadow: none;
-            }
+        text-decoration: none;
+        font-size:1rem;
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        border-radius: 50px;
+        border: 3px solid #0000d3;
+        transition: all ease-in-out 500ms;
+        text-align: center;
+        &:hover {
+            background-color: #0000d3;
+            color: #fffdf9;
+            transition: all ease-in-out 500ms;;
+        }
+    }
+        .full-btn {
+            background-color: #ff5500;
+            color: #fffdf9;
+            border: none;
+            transition: all ease-in-out 500ms;
+        }
+        .full-btn:hover {
+           background-color: #fffdf9; 
+           color: #ff5500;
+           border: 3px solid #ff5500;
+           transition: all ease-in-out 500ms;
         }
     }
 }
@@ -67,6 +74,9 @@
         }
         .palette {
             display: none;
+        }
+        .return-link {
+            flex-direction: column;
         }
     }
 }

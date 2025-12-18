@@ -46,28 +46,8 @@
     isolation: isolate;
   }
 
-@font-face {
-  font-family: "Mangrove Bold";
-  src:
-    local("MangroveSans-Bold"),
-    url("MangroveSans-Bold.otf") format("opentype"),
-    url("MangroveSans-Regular.otf") format("opentype"),
-}
-@font-face {
-  font-family: "Mangrove Regular";
-  src:
-    local("MangroveSans-Regular"),
-    url("MangroveSans-Regular.otf") format("opentype"),
-}
-@font-face {
-  font-family: "Mangrove Script";
-  src:
-    local("MangroveScript-Bold"),
-    url("MangroveScript-Bold.otf") format("opentype"),
-}
-
   body {
-    font-family: 'Mangrove Regular';
+    font-family: 'Quicksand';
     background-color: #fffdf9;
     background-repeat: no-repeat;
     color: #0000d3;
@@ -78,7 +58,8 @@
         color: inherit;
     }
     h1, h2 {
-        font-family: 'Mangrove Bold';
+        font-family: 'Quicksand';
+        font-weight: 700;
         text-transform: uppercase;
     }
   }
@@ -98,9 +79,10 @@
     }
     .social-media {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 2rem;
             svg {
-              width: 3rem;
+              width: 2rem;
             }
     }
   }
@@ -121,6 +103,7 @@
       }
       .social-media {
         justify-content: center;
+        padding-top: 1rem;
         gap: 1.5rem;
           svg {
             width: 2rem;

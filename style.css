@@ -52,20 +52,8 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-@font-face {
-  font-family: "Mangrove Bold";
-  src: local("MangroveSans-Bold"), url("MangroveSans-Bold.otf") format("opentype"), url("MangroveSans-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "Mangrove Regular";
-  src: local("MangroveSans-Regular"), url("MangroveSans-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "Mangrove Script";
-  src: local("MangroveScript-Bold"), url("MangroveScript-Bold.otf") format("opentype");
-}
 body {
-  font-family: "Mangrove Regular";
+  font-family: "Quicksand";
   background-color: #fffdf9;
   background-repeat: no-repeat;
   color: #0000d3;
@@ -78,7 +66,8 @@ body main a {
   color: inherit;
 }
 body main h1, body main h2 {
-  font-family: "Mangrove Bold";
+  font-family: "Quicksand";
+  font-weight: 700;
   text-transform: uppercase;
 }
 body footer {
@@ -95,10 +84,11 @@ body footer .contact .contact-infos {
 }
 body footer .social-media {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
 }
 body footer .social-media svg {
-  width: 3rem;
+  width: 2rem;
 }
 
 @media (max-width: 35em) {
@@ -117,6 +107,7 @@ body footer .social-media svg {
   }
   body footer .social-media {
     justify-content: center;
+    padding-top: 1rem;
     gap: 1.5rem;
   }
   body footer .social-media svg {
@@ -235,7 +226,7 @@ header .logo {
   text-decoration: none;
   display: block;
   padding: 15px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   overflow: hidden;
 }
@@ -281,13 +272,13 @@ header .logo {
   display: grid;
   grid-template-columns: minmax(0, 30rem) minmax(0, 40rem);
   justify-content: center;
-  padding-block-end: 4rem;
+  padding-block-end: 6.5rem;
 }
 .hero .hero-infos {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  text-align: center;
+  text-align: left;
 }
 .hero h1 {
   font-size: 4.5rem;
@@ -296,37 +287,42 @@ header .logo {
 .hero .about-me-btn {
   padding-block-start: 2rem;
   padding-block-end: 1.3rem;
+  font-weight: 700;
 }
 .hero .about-me-btn .full-btn {
   background-color: #ff5500;
   color: #fffdf9;
   border: none;
+  transition: all ease-in-out 500ms;
 }
 .hero .about-me-btn .full-btn:hover {
-  box-shadow: 0 4px 30px rgba(255, 85, 0, 0.2745098039);
-  backdrop-filter: blur(14.9px);
-  -webkit-backdrop-filter: blur(14.9px);
-  transition: all ease-in-out 300ms;
+  background-color: #fffdf9;
+  color: #ff5500;
+  border: 3px solid #ff5500;
+  transition: all ease-in-out 500ms;
 }
 .hero a {
   text-decoration: none;
   font-size: 1rem;
   padding-block: 1rem;
-  padding-inline: 3.5rem;
+  padding-inline: 2rem;
   border-radius: 50px;
-  border: 2px solid #0000d3;
-  transition: all ease-in-out 300ms;
+  border: 3px solid #0000d3;
+  transition: all ease-in-out 500ms;
   text-align: center;
 }
 .hero a:hover {
   background-color: #0000d3;
   color: #fffdf9;
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 500ms;
 }
 
 @media (max-width: 35em) {
   .hero {
     display: block;
+  }
+  .hero .hero-infos {
+    text-align: center;
   }
   .hero h1 {
     font-size: 3rem;
@@ -369,13 +365,14 @@ header .logo {
 .about h1 {
   font-size: 3rem;
   margin-block-start: 4rem;
+  font-weight: 700;
 }
 .about .about-infos {
   display: flex;
   flex-direction: column;
 }
 .about h3 {
-  font-weight: 800;
+  font-weight: 700;
   display: flex;
 }
 .about span {
@@ -393,6 +390,7 @@ header .logo {
     text-align: center;
     font-size: 3.5rem;
     margin-block-start: 4rem;
+    font-weight: 700;
   }
 }
 @media (max-width: 60em) {
@@ -407,15 +405,17 @@ header .logo {
   }
   .about h1 {
     font-size: 3.5rem;
+    font-weight: 700;
   }
   .about h3 {
     display: block;
     text-align: center;
+    font-weight: 700;
   }
 }
 .grid-column {
   display: grid;
-  grid-template-columns: minmax(0, 30em) minmax(0, 30em);
+  grid-template-columns: minmax(0, 31em) minmax(0, 31em);
   justify-content: center;
   gap: 10rem;
   margin-block-end: 4rem;
@@ -425,6 +425,7 @@ header .logo {
 }
 .grid-column h2 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 .grid-column .education {
   margin-block-end: 2rem;
@@ -432,6 +433,7 @@ header .logo {
 .grid-column .education summary {
   font-weight: 800;
   font-size: 1.17rem;
+  font-weight: 700;
 }
 .grid-column .education h2 {
   margin-block-end: 1rem;
@@ -453,6 +455,7 @@ header .logo {
 .grid-column .experiences summary {
   font-weight: 800;
   font-size: 1.17rem;
+  font-weight: 700;
 }
 .grid-column .experiences h2 {
   margin-block-start: 1rem;
@@ -467,6 +470,7 @@ header .logo {
 }
 .grid-column .tech h3, .grid-column .soft-skills h3, .grid-column .experiences h3 {
   margin-block: 1rem;
+  font-weight: 700;
 }
 .grid-column .tech ul, .grid-column .soft-skills ul, .grid-column .experiences ul {
   margin-block-end: 1.8rem;
@@ -480,7 +484,7 @@ header .logo {
   margin-block-end: 1rem;
   margin-inline-end: 1rem;
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1rem;
   padding-block: 0.5rem;
   padding-inline: 1.5rem;
@@ -510,6 +514,7 @@ header .logo {
   }
   .grid-column h2 {
     font-size: 2.5rem;
+    font-weight: 700;
   }
   .grid-column .code-tech, .grid-column .creativ-tech {
     justify-content: center;
@@ -559,9 +564,13 @@ header .logo {
 }
 .projects h1 {
   margin-inline-start: 2rem;
+  font-weight: 700;
 }
 .projects h3 {
   padding-block-start: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .projects .number-projects {
   font-family: inherit;
@@ -575,7 +584,7 @@ header .logo {
   width: 35rem;
 }
 .projects .projects-ui .large {
-  height: 90.5%;
+  height: 85%;
 }
 
 .projects-ui {
@@ -583,6 +592,7 @@ header .logo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-evenly;
+  align-items: stretch;
   gap: 2rem;
   text-align: left;
 }
@@ -595,9 +605,11 @@ header .logo {
   .projects h1 {
     margin-inline-start: 0;
     text-align: center;
+    font-weight: 700;
   }
   .projects h3 {
     text-align: center;
+    font-weight: 700;
   }
   .projects .projects-ui {
     display: grid;
@@ -605,6 +617,7 @@ header .logo {
   }
   .projects .projects-ui .projects-title {
     margin-block: 1rem;
+    font-weight: 700;
   }
   .projects .projects-ui {
     margin-block: 4rem;
@@ -652,14 +665,14 @@ header .logo {
 }
 .project-details .dog-profile {
   display: grid;
-  grid-template-columns: 13rem 4.2rem 36rem 17.5rem;
+  grid-template-columns: 25rem 25rem 25rem;
   gap: 1.5rem;
   margin-block: 2rem;
   justify-content: center;
 }
 .project-details .project-text {
   display: grid;
-  grid-template-columns: repeat(2, 21.5rem);
+  grid-template-columns: repeat(2, 25rem);
   gap: 1rem;
   justify-content: center;
 }
@@ -667,26 +680,35 @@ header .logo {
   margin-block-start: 2rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
+  font-weight: 700;
 }
 .project-details .return-link a {
   text-decoration: none;
-  font-weight: 400;
   font-size: 1rem;
   padding-block: 1rem;
-  padding-inline: 1.5rem;
-  border-radius: 20px;
-  color: #ff5500;
-  border: 2px solid #ff5500;
-  box-shadow: 0 4px 30px rgba(255, 85, 0, 0.2352941176);
-  backdrop-filter: blur(14.9px);
-  -webkit-backdrop-filter: blur(14.9px);
-  transition: all ease-in-out 300ms;
+  padding-inline: 2rem;
+  border-radius: 50px;
+  border: 3px solid #0000d3;
+  transition: all ease-in-out 500ms;
+  text-align: center;
 }
 .project-details .return-link a:hover {
+  background-color: #0000d3;
+  color: #fffdf9;
+  transition: all ease-in-out 500ms;
+}
+.project-details .return-link .full-btn {
   background-color: #ff5500;
   color: #fffdf9;
-  box-shadow: none;
+  border: none;
+  transition: all ease-in-out 500ms;
+}
+.project-details .return-link .full-btn:hover {
+  background-color: #fffdf9;
+  color: #ff5500;
+  border: 3px solid #ff5500;
+  transition: all ease-in-out 500ms;
 }
 
 .number-projects {
@@ -712,6 +734,9 @@ header .logo {
   }
   .project-details .palette {
     display: none;
+  }
+  .project-details .return-link {
+    flex-direction: column;
   }
 }
 @media (max-width: 65em) {
