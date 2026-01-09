@@ -53,6 +53,49 @@
                 padding-inline-start: 1rem;
             }
         }
+        .project-tiles{
+            display: flex;
+            gap: 1rem;
+            .project-1, .project-2{
+                width: 95%;
+                transition: all ease-in-out 500ms;
+                &:hover {
+                    width: 100%;
+                    transition: all ease-in-out 500ms;
+                }
+            }
+        }
+        .full-btn {
+            background-color: #ff5500;
+            color: #fffdf9;
+            border: none;
+            transition: all ease-in-out 500ms;
+        }
+        .full-btn:hover {
+           background-color: #fffdf9; 
+           color: #ff5500;
+           border: 3px solid #ff5500;
+           transition: all ease-in-out 500ms;
+        }
+        .project-resume-section {
+            h2 {
+                text-align: left;
+            }
+            text-align: end;
+            a {
+                text-decoration: none;
+                font-size:1rem;
+                font-weight: 600;
+                padding-block: 1rem;
+                padding-inline: 2rem;
+                border-radius: 50px;
+                transition: all ease-in-out 500ms;
+                &:hover {
+                    transition: all ease-in-out 500ms;;
+                }  
+        }
+        
+    }
     }
     .tech, .soft-skills, .experiences {
         h3 {
