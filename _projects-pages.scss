@@ -7,6 +7,10 @@
         gap: 1.5rem;
         margin-block: 2rem;
         justify-content: center;
+        align-items: center;
+        .phone {
+            max-width: 90%;
+        }
     }
 
     .project-text {
@@ -56,6 +60,9 @@
     font-family: inherit;
     font-size: 2rem;
     text-align: center;
+    .number-projects-orange {
+        color: #ff5500;
+    }
 }
 
 @media (max-width:35em) {

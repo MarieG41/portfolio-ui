@@ -711,6 +711,10 @@ header .logo {
   gap: 1.5rem;
   margin-block: 2rem;
   justify-content: center;
+  align-items: center;
+}
+.project-details .dog-profile .phone {
+  max-width: 90%;
 }
 .project-details .project-text {
   display: grid;
@@ -757,6 +761,9 @@ header .logo {
   font-family: inherit;
   font-size: 2rem;
   text-align: center;
+}
+.number-projects .number-projects-orange {
+  color: #ff5500;
 }
 
 @media (max-width: 35em) {
