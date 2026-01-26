@@ -468,6 +468,48 @@ header .logo {
 .grid-column .experiences .work-experience .infos {
   padding-inline-start: 1rem;
 }
+.grid-column .experiences .project-tiles {
+  display: flex;
+  gap: 1rem;
+}
+.grid-column .experiences .project-tiles .project-1, .grid-column .experiences .project-tiles .project-2 {
+  width: 95%;
+  transition: all ease-in-out 500ms;
+}
+.grid-column .experiences .project-tiles .project-1:hover, .grid-column .experiences .project-tiles .project-2:hover {
+  width: 100%;
+  transition: all ease-in-out 500ms;
+}
+.grid-column .experiences .full-btn {
+  background-color: #ff5500;
+  color: #fffdf9;
+  border: none;
+  transition: all ease-in-out 500ms;
+}
+.grid-column .experiences .full-btn:hover {
+  background-color: #fffdf9;
+  color: #ff5500;
+  border: 3px solid #ff5500;
+  transition: all ease-in-out 500ms;
+}
+.grid-column .experiences .project-resume-section {
+  text-align: end;
+}
+.grid-column .experiences .project-resume-section h2 {
+  text-align: left;
+}
+.grid-column .experiences .project-resume-section a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  border-radius: 50px;
+  transition: all ease-in-out 500ms;
+}
+.grid-column .experiences .project-resume-section a:hover {
+  transition: all ease-in-out 500ms;
+}
 .grid-column .tech h3, .grid-column .soft-skills h3, .grid-column .experiences h3 {
   margin-block: 1rem;
   font-weight: 700;
